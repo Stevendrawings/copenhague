@@ -1,0 +1,583 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+  @font-face {
+      font-family: 'sachie_scriptregular';
+      src: url('../fonts/sachie_script-webfont.eot');
+      src: url('../fonts/sachie_script-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/sachie_script-webfont.woff2') format('woff2'),
+           url('../fonts/sachie_script-webfont.woff') format('woff'),
+           url('../fonts/sachie_script-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal; }
+
+
+/* BASE */
+
+body {
+  line-height: 1;
+  background-color:white;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  margin:0;
+  padding:0;
+  outline:0; }
+
+header {
+  height: 58px;
+  background-color: white; }
+
+strong { font-weight: bold; }
+
+img {width: 100%; }
+
+/* HEADER */
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px;
+  align-items: center; }
+
+.logo img {
+  width:100%;
+  height: 31px; }
+
+.center-txt {
+  display:flex;
+  align-items: center; }
+
+.pictos { display: flex; }
+
+.pictos div img  {
+  height: 20px;
+  width: 20px }
+
+.gradient {
+  height: 50px;
+  background-image: linear-gradient(to bottom, #f3f3f3, #f6f6f6, #f9f9f9, #fcfcfc, #ffffff);
+  height: 50px;
+  margin: -2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.gradient p { color:#8888; }
+
+.pictos-infos {
+	float: left;
+	margin: -3px;
+	width: 38px; }
+
+.gradient div {
+  display: flex;
+  align-items: center; }
+
+.gradient div span img {
+  margin: 0 5px;
+  width: 10px;
+  transform: rotate(-180deg); }
+
+/* CONTENT */
+
+.overlay {
+  background-image: url("../img/copenhague.jpg");
+  background-size: cover;
+  height: 705px;
+  background-position: -4px 24%; }
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#0000004a;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 705px; }
+
+img.boussole {
+  width: 25px;
+  height: 25px; }
+
+.block-title h1 {
+  display: block;
+  text-transform: capitalize;
+  font-family: 'sachie_scriptregular';
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  font-size: 14vw;
+  margin-bottom: 20px; }
+
+.block-title p {
+  font-weight: bold;
+  color:white;
+  font-size: 40px;
+  text-shadow: 1px 1px 10px black; }
+
+.icone {
+	color:white;
+	width: 100%;
+	max-width: 810px;
+	display: flex;
+	justify-content: space-around;
+	height: 140px; }
+
+.icone div { text-shadow: 1px 1px 5px black; }
+
+.boutton-form {
+	color: white;
+	background-color: #262626;
+	padding: 15px;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	left: 0; }
+
+.pictos-btn {
+	width: 10px;
+	position: relative;
+	right: -16px; }
+
+.pictos-overlay {
+	width:30px;
+	margin-bottom: 10px;
+	height: auto; }
+
+
+.arrow {
+  text-align: center;
+  width: inherit;
+  margin: 0;
+  position: relative;
+  bottom: 110px; }
+
+.formulaire {
+	text-align: center;
+	background-color: #f28f38;
+	max-width: 696px;
+	height: auto;
+	width: 100%;
+	padding: 20px;
+	position: relative;
+	top: -95px; }
+
+.input-form {
+  border: none;
+  padding: 15px 15px;
+  width: 80%;
+  max-width: 290px;
+  border-radius: 30px;
+  margin: 13px; }
+
+.content-form {
+	display: flex;
+	justify-content: center; }
+
+.formulaire h2 {
+	margin-bottom:20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffff; }
+
+.formulaire h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold; }
+
+.formulaire p { color: white }
+
+.programme {
+	text-align: center; }
+
+.programme h1 {
+		margin-bottom: 15px;
+	text-align: center;
+	font-size: 25px;
+	color: #001856 }
+
+.fond {
+	width:100%;
+	background-image:url("../img/drapeau.png");
+	background-position: 790px 10px;
+	background-repeat: no-repeat; }
+
+.yellow {
+	margin:0 auto;
+	width:100%;
+	max-width:696px;
+	height:300px; }
+
+.yellow { display: block; }
+
+.block { display:flex; }
+
+.fond-black {
+	background-image:url("../img/paperpaint.png");
+	background-color: #262626;
+	height: auto;
+	padding: 40px; }
+
+.photodeprofil {
+	background-color: white;
+	width:150px;
+	height: 150px;
+	border-radius: 50%; }
+
+.rubrique-text {
+	display: flex;
+	flex-direction: row;
+	margin: 60px 0; }
+
+.rubrique-text h1 { margin-bottom: 10px; }
+.rubrique-text span { margin: 0 30px 0 0; }
+
+.profil {
+	background-color: white;
+	background-image: url("../img/photo-1501901609772-df0848060b33.jpg");
+	background-size: 380px;
+	background-position: -130px;
+	border: 5px solid white;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	display: block;
+	border-radius: 200px;
+	margin: 0 30px 30px 0;  }
+
+.name-bio {
+	font-weight: bold;
+	text-align: center;
+  position: relative;
+	margin-bottom: 30px;
+  left: -12px; }
+
+.content-bio {
+	color:white;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto }
+
+.activity { width: 490px; }
+
+.activity h1 {
+	font-size: 27px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px; }
+
+.polaroid { margin: 60px; }
+
+.block1 {
+	display: block;
+	background-color: white;
+	background-image: url("../img/shutterstock_458332693-min.jpg");
+	background-size: cover;
+	background-position: center;
+	border: 5px solid white;
+	width: 90px;
+	height: 90px;
+	transform: rotate(6deg);
+}
+
+.block2 {
+	display: block;
+	background-color:white;
+	background-image: url("../img/2019_Normann_Copenhagen_Ace_Lounge_Chair_Rope_Modular_Sofa_Silo_Pouf_Large_01.jpg");
+	background-size: cover;
+	background-position: center;
+	border: 5px solid white;
+	width: 140px;
+	height: 140px;
+	transform: rotate(-11deg);
+}
+
+.block3 {
+	display: block;
+	background-color:white;
+	background-image: url("../img/Copenhagen Danemark.jpg");
+	background-size: cover;
+	background-position: center;
+	border: 5px solid white;
+	width: 80px;
+	height: 80px;
+	transform: rotate(8deg);
+}
+
+.fond-blanc {
+	padding: 40px 0;
+	width:100%;
+	height: auto; }
+
+.theweknow {
+	margin:0 auto;
+	width:100%;
+	max-width: 873px;
+}
+
+.theweknow h1 {
+	text-align:center;
+	font-size: 30px;
+	margin-bottom: 70px;
+	font-weight: bold;
+	color: #000000; }
+
+	.presentation {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap; }
+
+	.photo-present1, .photo-present2 {
+		background-color: gold;
+		display: block;
+		width:300px;
+		height:300px; }
+
+	.photo-present1 {
+		background-image: url("../img/78b622c9cc194c6e86f44df7e3f7eeff.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+
+	.photo-present2 {
+		background-image: url("../img/Mars-2013-0124.jpg");
+		background-size: cover;
+		background-position: center;
+		 order: 1; }
+
+	.text-rub {
+		width: 530px;
+		margin: 20px; }
+
+	.fond-orange {
+		background-image:url("../img/fondmaps.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width:100%;
+		height:auto;
+		padding:40px 0;
+		background-color: orange;
+	}
+
+	.content-card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width:100%;
+		margin:0 auto;
+		max-width:835px; }
+
+		.content-card h1 {
+			text-align: center;
+			color: white;
+			font-size: 27px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 26px; }
+
+	.link-adresse { margin-bottom: 30px; }
+
+	.link-adresse ul li{
+		color:white;
+		position: relative;
+		left: -60px;
+		text-align: left;
+		font-size:15px;
+		margin:0 20px;
+		display: inline-block; }
+
+	.link-adresse ul li:first-child { font-weight: bold; }
+
+	.card-slide {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		width:100%;
+		max-width:835px; }
+
+	.card-destination {
+		width: 100%;
+		max-width: 257px;
+		height: auto;
+		background-color: white;
+		overflow: hidden;
+		margin: 10px; }
+
+	.card-destination figcaption {
+		padding: 20px;
+		display: block;
+		margin-top: -50px; }
+
+	span.text-card { display:flex; }
+
+	.pictocard {
+		float: left;
+		margin:10px; }
+
+.description-card {
+	font-size: 13px;
+	margin-bottom: 5px }
+
+.photo-card {
+	position: relative;
+	top: -50px; }
+
+.card-slide .maps img {
+	width:100%;
+	max-width:835px; }
+
+.maps-size { width:100%; }
+
+.content-infos {
+	width:100%;
+	max-width: 835px;
+	margin: 0 auto;
+	text-align: center; }
+
+.content-infos h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000; }
+
+.decord {
+	background-image: url("../img/fleur.png");
+	background-position: -10px 550px;
+	background-repeat: no-repeat;
+}
+
+.infos-lien {
+	text-align: justify;
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between; }
+
+.lien { margin: 30px 0; }
+
+.content-bonus {
+	width: 100%;
+	max-width: 835px;
+	margin:0 auto; }
+
+.content-bonus h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000; }
+
+.block-destinations {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center; }
+
+.block-travel {
+	width: 100%;
+	max-width: 200px;
+	height: 160px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 40px; }
+
+.block-travel h2 {
+	font-weight: bold;
+	font-size: 18px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.corse {
+	background-image: url("../img/corse.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; }
+
+.nice {
+	background-image: url("../img/nice.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.palma {
+	background-image: url("../img/palma_de_majorque.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ibizas {
+	background-image: url("../img/ibizas.jpg");
+	background-position: -840px;
+	background-repeat: no-repeat;
+	background-size: 1470px;
+}
+
+.fond-blanc2 {
+	background-image: url("../img/500px_111128523_0.png");
+	background-position: 0 -230px;
+	background-repeat: no-repeat;
+	background-size: cover; }
+
+.bas {
+	padding:30px;
+	text-align: center;
+	color: white; }
